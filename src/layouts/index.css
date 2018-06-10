@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    /* background-image: url('../assets/bk.svg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #efefef; */
+}
+
+h1, h2 {
+    margin: 0;
+    border: none;
+}
+h2 {
+  color: #009dab;
+}
+
+h3 {
+    margin: 0.7em 0 1em 0;
+}
+
+ul {
+  list-style-type: none;
+  border-top: 3px solid #666;
+  display: inline-block;
+}
+li {
+  float: left;
+  line-height: 70%;
+  padding: 1em 2em;
+}
+.table {
+  display: table;
+  margin: 0;
+  padding-top: 1.5em;
+  font-size: 0.9em;
+}
+.contactHead {
+  font-weight: bold;
+  line-height: 130%;
+}
+.info {
+    background-color: #fbfbfb;
+    color: #000;
+    position: relative;
+    /* justify-content: center; */
+    padding: 0 0 1em 2em;
+    /* margin: 0.5em; */
+    border-radius: 10px;
+    box-shadow: 0 -1px 6px #bbb;
+    top: -65px; }
+    
+.info > span {
+        color: #D9335B;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+
+.info-right {
+   
+     
+     color: white;
+    position: relative;
+    justify-content: center;
+    /* margin: 0 auto; */
+    padding-top: 1em;
+   
+    
+    border-radius: 3px;
+    
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 auto; */
+    
+}
+
+.grid-cell {
+    flex: 1;
+}
+
+.grid--gutters {
+    margin: -1em 0 0 -1em;
+}
+
+.grid--gutters > .grid-cell {
+  padding: 1em 0 0 1em;
+}
+
+.grid--fit > .grid-cell {
+  flex: 1;
+}
+.grid--full > .grid-cell {
+  flex: 0 0 100%;
+}
+
+
+@media (min-width: 24em) {
+  .small-grid--fit > .grid-cell {
+    flex: 1;
+  }
+  .small-grid--full > .grid-cell {
+    flex: 0 0 100%;
+  }
+  .small-grid--1of2 > .grid-cell {
+    flex: 0 0 50%;
+  }
+  .small-grid--1of3 > .grid-cell {
+    flex: 0 0 33.3333%;
+  }
+  .small-grid--1of4 > .grid-cell {
+    flex: 0 0 25%;
+  }
+  
+}
+
+@media (min-width: 48em) {
+  .large-grid--fit > .grid-cell {
+    flex: 1;
+  }
+  .large-grid--full > .grid-cell {
+    flex: 0 0 100%;
+  }
+   .large-grid--1of2 > .grid-cell {
+    flex: 0 0 50%;
+  }
+  .large-grid--1of3 > .grid-cell {
+    flex: 0 0 33.3333%;
+  }
+  .large-grid--1of4 > .grid-cell {
+    flex: 0 0 25%;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  li {
+    width: 100%;
+    text-align: center;
+  }
+  
+}
