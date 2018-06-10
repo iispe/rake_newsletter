@@ -28,6 +28,10 @@ li {
   line-height: 70%;
   padding: 1em 2em;
 }
+
+li p:hover {
+  color: #ccc;
+}
 .table {
   display: table;
   margin: 0;
