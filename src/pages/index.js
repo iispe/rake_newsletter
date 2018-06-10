@@ -1,16 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-
+import Icon from "../components/icon";
 import Ingress from "../components/ingress";
 import NewsItem from "../components/newsItem";
 
-// import '../layouts/index.css';
-// const Container = styled.div`
-//   margin: 0 auto 0;
-  
-  
-// `;
+
 const Section = styled.section`
     padding: 0 2em;
     &:nth-child(3) {
@@ -35,29 +30,7 @@ const NewsHeader = styled.div`
     border-bottom: 1px solid #eee;
 
 `;
-const Icon = styled.div`
-    background-color: #D9335B;
-    
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    position: absolute;
-    border: 3px solid white;
-    border-radius: 50%;
-   box-shadow: 0 3px 4px #aaa; 
-    height 45px;
-    width: 45px;
-    
-    top: -20px;
-    right: -5px;
 
-    @media (max-width: 720px){
-        
-        top: -20px;
-        left: -5px;
-    }
-`;
 
 const ContactContainer = styled.div`
     // border: 1px solid #ccc;
@@ -72,19 +45,12 @@ const ContactContainer = styled.div`
     border-radius: 0 0 7px 7px ;
     padding: 1em;
     
+    
+        h2 {
+            text-align: center;
+        }
+    
 `;
-
-
-
-// const User = props => (
-//     <UserWrapper>
-//         <Avatar src={props.avatar} alt="" />
-//         <Description>
-//             <Username>{props.username}</Username>
-//             <Excerpt>{props.excerpt}</Excerpt>
-//         </Description>
-//     </UserWrapper>
-// );
 
 export default () => (
     <div>
@@ -99,29 +65,28 @@ export default () => (
        
         <News className="grid grid-gutters grid--full large-grid--fit">
             
-            <NewsItem>
-                
+            <NewsItem>                
                 <p><span>Muistathan</span>, että sinun ei tarvitse allekirjoittaa uutta työsopimusta siirtyessäsi liikkeenluovutuksella uudelle työnantajalle.</p>  
-                <Icon>1</Icon>  
+                <Icon content="1" />
             </NewsItem> 
             <NewsItem>
                 <p><span>Liikkeenluovutuksessa</span> työntekijä siirtyy entisin ehdoin uuden työnantajan palvelukseen. Näin ollen lomaoikeudet, eläkeoikeudet ja säästövapaat säilyvät toistaiseksi ennallaan.</p> 
-                <Icon>2</Icon> 
+                <Icon content="2" />
             </NewsItem> 
            
             <NewsItem>
                 <p><span>Uudella työnantajalla</span> palkat tullaan harmonisoimaan myöhemmin ilmoitetun aikataulun mukaisesti.</p>  
-                <Icon>3</Icon>   
+                <Icon content="3" />  
             </NewsItem> 
         </News>
         <News className="grid grid-gutters grid--full large-grid--fit">
             <NewsItem >
                 <p>Lorem ipsum</p>   
-                <Icon>4</Icon> 
+                <Icon content="4" /> 
             </NewsItem> 
             <NewsItem>
                 <p>Lorem ipsum</p>  
-                <Icon>5</Icon>  
+                <Icon content="5" />  
             </NewsItem> 
         </News>
     </Section>

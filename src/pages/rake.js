@@ -35,8 +35,8 @@ const MainText = styled.div`
     max-width: 920px;
 `;
 
-const Name = styled.span`
-    color: #D9335B;
+const Highlight = styled.span`
+    color: #09c3a0;
 `;
 
 const First = styled.span`
@@ -50,15 +50,14 @@ const First = styled.span`
 `;
 export default () => (
     <Container>
-        
         <Navigation>
             <Link to="/"> {"<"} Takaisin etusivulle </Link>
         </Navigation>
         <SubPageContainer>
                 <TekstiOsa>
                     <SubPageHeader>
-                        <p>Rakennemuutos maakunnassa on suuri ja sen vaikutukset ovat merkittäviä <Name>Tehyläiselle</Name> henkilöstölle.</p>
-                    <p>Kymenlaakson <Name>Tehy Rake -ryhmä</Name> ja ammattiosastojen puheenjohtajisto, sekä lm:t tsv:t kokoontuvat säännöllisesti yhdessä tai pj:t erikseen. Samoin muiden ammattijärjestöjen tapaamiset ovat säännöllisiä, neuvottelijat heidän kanssa ovat Tehyltä <Name>Eija Lantta</Name>, <Name>Asta Nurminen</Name> ja <Name>Marja-Riitta Mänttäri</Name>.</p>
+                        <p>Rakennemuutos maakunnassa on suuri ja sen vaikutukset ovat merkittäviä Tehyläiselle henkilöstölle.</p>
+                    <p>Kymenlaakson Tehy Rake -ryhmä ja ammattiosastojen puheenjohtajisto, sekä luottamusmihet ja työsuojeluvaltuutetut kokoontuvat säännöllisesti yhdessä tai puheenjohtajat erikseen. Samoin muiden ammattijärjestöjen tapaamiset ovat säännöllisiä, neuvottelijat heidän kanssa ovat Tehyltä <Highlight>Eija Lantta, Asta Nurminen ja Marja-Riitta Mänttäri.</Highlight></p>
                     </SubPageHeader>
             
                     <MainText>

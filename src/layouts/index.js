@@ -7,7 +7,7 @@ import '../layouts/index.css';
 
 export default ({ children }) => (
     <div>
-        <Header />
+        
         
         {children()}
         

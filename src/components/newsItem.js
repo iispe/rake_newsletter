@@ -26,10 +26,6 @@ const Item = styled.div`
    
 `;
 
-
-
-
-
 const NewsItem = ({children}) => (
     <Item className="grid-cell">
         {children}
