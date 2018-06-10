@@ -15,7 +15,6 @@ const Section = styled.section`
     padding: 0 2em;
     &:nth-child(3) {
         border-top: 3px solid #D9335B;
-    
         padding: 10px 0 10px 0;
         margin: 3em 0 0 0;
         min-height: 320px;

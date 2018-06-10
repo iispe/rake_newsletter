@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const Cont = styled.div`
-  margin: 0 auto 0;
-  
+  margin: 0 auto;
+  padding: 0;
   
 `;
 
-const Container = ({}) => (
+const Container = ({ children }) => (
     <Cont>
-        
+        {children}
     </Cont>
 );
 
