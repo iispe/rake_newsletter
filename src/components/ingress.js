@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Link from "gatsby-link";
 const Ing = styled.div`
     background-color: #364f74;
+    background-image: linear-gradient(to bottom, #364f74, #3a5376, #3f5778, #435a79, #485e7b);
     color: #009dab;
     text-shadow: 0px 2px 2px #222;
     padding: 2em 2em 2em;

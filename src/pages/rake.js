@@ -37,14 +37,15 @@ const SubPageHeader = styled.div`
 const TekstiOsa = styled.div`
     font-size: 1.3em;
     padding-top: 15px;
+    padding-bottom: 15px;
 `;
 
 const MainText = styled.div`
     margin: 3px auto 0;
-    padding: 1em 2em 2em 2em;
+    padding: 1em 2em;
     max-width: 920px;
     border: 1px solid #bbb;
-    border-bottom: none;
+    
     background-color: #fff;
 `;
 
