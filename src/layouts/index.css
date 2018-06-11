@@ -26,7 +26,7 @@ ul {
 li {
   float: left;
   line-height: 70%;
-  padding: 1em 2em;
+  padding: 1em 1.5em;
 }
 
 li p:hover {
@@ -34,13 +34,14 @@ li p:hover {
 }
 .table {
   display: table;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 1.5em;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 .contactHead {
   font-weight: bold;
-  line-height: 130%;
+  
+   
 }
 .info {
     background-color: #fbfbfb;
@@ -139,7 +140,7 @@ li p:hover {
   
 }
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
   li {
     width: 100%;
     text-align: center;

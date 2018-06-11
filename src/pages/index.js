@@ -34,7 +34,7 @@ const NewsHeader = styled.div`
 
 const ContactContainer = styled.div`
     // border: 1px solid #ccc;
-    max-width: 920px;
+    max-width: 1020px;
     font-size: 1.2em;
     // border-top: 5px solid #2f4858;
     // border-bottom: 5px solid #2f4858;
@@ -52,6 +52,12 @@ const ContactContainer = styled.div`
     
 `;
 
+const ContactInfo = styled.p`
+        font-size: 0.6em;
+        color: #009dab;
+        padding-bottom: 0.5em;
+        font-weight: bold;
+`; 
 export default () => (
     <div>
         <Ingress />
@@ -96,11 +102,11 @@ export default () => (
                 <h2>YHTEYSTIEDOT</h2>
             <div className="table">
             <ul>
-                <li><p className="contactHead">AO 400</p><p>Nina Wicht</p><p>Eija Lantta</p></li>
-                <li><p className="contactHead">AO 401</p><p>Pekka Iiskola</p><p>Kirsi Kekki</p><p>Jaana Salovaara</p></li>
-                <li><p className="contactHead">AO 404</p><p>Paula Werning</p><p>Tarja Kanerva</p></li>
-                <li><p className="contactHead">AO 406</p><p>Kirsi Soidinsalo</p><p>Marja-Riitta Mänttäri</p></li>
-                <li><p className="contactHead">AO 408</p><p>Marianne Närhi</p><p>Katri Hannola</p></li>
+                        <li><p className="contactHead">AO 400</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p> Nina Wicht</p><p>Eija Lantta</p></li>
+                        <li><p className="contactHead">AO 401</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p>Pekka Iiskola</p><p>Kirsi Kekki</p><p>Jaana Salovaara</p></li>
+                        <li><p className="contactHead">AO 404</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p>Paula Werning</p><p>Tarja Kanerva</p></li>
+                        <li><p className="contactHead">AO 406</p><ContactInfo>etunimi.sukunimi@kotka.fi</ContactInfo><p>Kirsi Soidinsalo</p><p>Marja-Riitta Mänttäri</p></li>
+                        <li><p className="contactHead">AO 408</p><ContactInfo> etunimi.sukunimi@hamina.fi</ContactInfo><p>Marianne Närhi</p><p>Katri Hannola</p></li>
                 
             </ul>
             </div>

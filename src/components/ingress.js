@@ -4,7 +4,7 @@ import Link from "gatsby-link";
 const Ing = styled.div`
     background-color: #364f74;
     color: #009dab;
-    
+    text-shadow: 0px 2px 2px #222;
     padding: 2em 2em 2em;
     margin-bottom: 6em;
     border-bottom: 3px solid #009dab;
@@ -13,44 +13,62 @@ const Ing = styled.div`
 
 const Right = styled.div`
     
-    font-weight: bold;
-//   border-bottom: 1px solid ;
-    font-size: 2em;
-    padding-right: 2em;
+    
+      border-right: 3px solid #009dab;
+    
+    
     & p {
-        padding: 0.5em 0;
+        font-weight: bold;
+        font-size: 2em;
+        t
+        padding-top: 0.5em;
         // border-top: 1px solid #009dab;
-        border-bottom: 1px solid #009dab;
+        // border-bottom: 1px solid #009dab;
+    }
+    & div {
+        font-size: 0.8em;
+        color: white;
+        
+    }
+
+    @media (max-width: 720px) {
+        border: none;
     }
 `;
 
 const Left = styled.div`
-    padding-top: 6.5em;
+    padding: 6.5em 0 0 3em;;
     color: white;
     font-size: 1.2em;
-    padding-left: 1em;
+    
     & h3{
         font-weight: bold;
+        
         text-decoration: underline;
-        color: #95b0b4;
+        color: #09c3a0;
     }
 `;
 
 const Button = styled.button`
-    background-color: #09c3a0;
+    background-color: #009dab;
     display: inline-block;
     font-size: 0.7em;
     font-weight: bold;
     padding: 0.2em 2em;
     border-radius: 5px;
     border: none;
-   vertical-align: base-line;
-    color: white;
+    box-shadow: 0px 2px 2px #222;
+    vertical-align: base-line;
+    color: #ddd;
+    &:hover {
+        box-shadow: 0px 1px 1px #222;
+    }
 `;
 const Ingress = ({}) => (
     <Ing className="grid grid-gutters ">
         <Right className="grid-cell ">
-            <p>Tämä on Tehyn Kymenlaakson alueen ammattiosastojen yhteinen muutosinfokirje</p>
+            <p>Muutos. Tulevaisuus. Tehyläisyys.</p>
+            <div>Tämä on Tehyn Kymenlaakson alueen ammattiosastojen yhteinen muutosinfo</div>
     </Right>
         <Left className="grid-cell ">
             <h3>RAKE-ryhmä?</h3>
