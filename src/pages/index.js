@@ -75,25 +75,28 @@ export default () => (
                 <p><span>Muistathan</span>, että sinun ei tarvitse allekirjoittaa uutta työsopimusta siirtyessäsi liikkeenluovutuksella uudelle työnantajalle.</p>  
                 <Icon content="1" />
             </NewsItem> 
-            <NewsItem>
-                <p><span>Liikkeenluovutuksessa</span> työntekijä siirtyy entisin ehdoin uuden työnantajan palvelukseen. Näin ollen lomaoikeudet, eläkeoikeudet ja säästövapaat säilyvät toistaiseksi ennallaan.</p> 
-                <Icon content="2" />
-            </NewsItem> 
+                <NewsItem>
+                    <p><span>Työnantajan</span> pitää jokatapauksessa noudattaa vanhoja työsuhteen ehtoja, jos uutta sopimusta ei allekirjoiteta</p>
+                    <Icon content="2" />
+                </NewsItem> 
+                <NewsItem >
+                    <p><span>Jos haluat</span> allekirjoittaa sinulle tarjotun uuden työsopimuksen, varmista, että kaikki merkittävät ehdot säilyvät samantasoisina kuin aikaisemmin. Paremman työsopimuksen saa toki allekirjoittaa.</p>
+                    <Icon content="3" />
+                </NewsItem> 
            
-            <NewsItem>
-                <p><span>Uudella työnantajalla</span> palkat tullaan harmonisoimaan myöhemmin ilmoitetun aikataulun mukaisesti.</p>  
-                <Icon content="3" />  
-            </NewsItem> 
+           
+           
         </News>
         <News className="grid grid-gutters grid--full large-grid--fit">
-            <NewsItem >
-                <p>Lorem ipsum</p>   
-                <Icon content="4" /> 
-            </NewsItem> 
-            <NewsItem>
-                <p>Lorem ipsum</p>  
-                <Icon content="5" />  
-            </NewsItem> 
+                
+                <NewsItem>
+                    <p><span>Liikkeenluovutuksessa</span> työntekijä siirtyy entisin ehdoin uuden työnantajan palvelukseen. Näin ollen lomaoikeudet, eläkeoikeudet ja säästövapaat säilyvät toistaiseksi ennallaan.</p>
+                    <Icon content="4" />
+                </NewsItem> 
+                <NewsItem>
+                    <p><span>Siirrä</span> kaikki omat tiedostosi turvaan työkoneelta (koulutusmateriaalit, kehityskeskustelut ym). Uudella työnantajalla tietojärjestelmät muuttuu ja käyttöoikeus vanhoihin tiedostoihin voin päättyä.</p>
+                    <Icon content="5" />
+                </NewsItem> 
         </News>
     </Section>
     <Section>
