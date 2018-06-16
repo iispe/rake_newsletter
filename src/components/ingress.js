@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "gatsby-link";
+
 const Ing = styled.div`
     background-color: #364f74;
     background-image: linear-gradient(to bottom, #364f74, #3a5376, #3f5778, #435a79, #485e7b);
@@ -13,11 +13,7 @@ const Ing = styled.div`
 `;
 
 const Right = styled.div`
-    
-    
-      border-right: 3px solid #009dab;
-    
-    
+    border-right: 3px solid #009dab;
     & p {
         font-weight: bold;
         font-size: 2em;
@@ -28,10 +24,10 @@ const Right = styled.div`
     }
     & div {
         font-size: 0.8em;
+        padding-right: 5em;
         color: white;
         
     }
-
     @media (max-width: 720px) {
         border: none;
     }
@@ -48,33 +44,21 @@ const Left = styled.div`
         text-decoration: underline;
         color: #09c3a0;
     }
-`;
 
-const Button = styled.button`
-    background-color: #009dab;
-    display: inline-block;
-    font-size: 0.7em;
-    font-weight: bold;
-    padding: 0.2em 2em;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 2px 2px #222;
-    vertical-align: base-line;
-    color: #ddd;
-    &:hover {
-        box-shadow: 0px 1px 1px #222;
+    @media (max-width: 420px) {
+        padding-top: 3em;
     }
 `;
+
+
 const Ingress = ({}) => (
     <Ing className="grid grid-gutters ">
         <Right className="grid-cell ">
             <p>Muutos. Tulevaisuus. Tehyläisyys.</p>
-            <div>Tämä on Tehyn Kymenlaakson alueen ammattiosastojen yhteinen muutosinfo</div>
+            <div>Uusi maakunta Tehyläisin silmin</div>
     </Right>
         <Left className="grid-cell ">
-            <h3>RAKE-ryhmä?</h3>
-            <p>Alueellinen rakennemuutos- eli RAKE-ryhmä, jonka keskeisenä tehtävänä on selvittää muutoksen vaikutukset tehyläisiin ja vastata niihin. Ryhmän tehtävänä on sopia ja valita edustajia työryhmiin, joissa henkilöstöä koskevia asioita käsitellään.</p> 
-            <Link to="/rake/"><Button>LUE LISÄÄ</Button></Link>
+           Tietoa tulevasta muutoksesta ja uudesta maakunnasta Tehyn rake-ryhmän toimittamana. 
     </Left>
     
     

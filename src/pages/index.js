@@ -1,5 +1,7 @@
+import Link from "gatsby-link";
 import React from "react";
 import styled from "styled-components";
+
 
 import Icon from "../components/icon";
 import Ingress from "../components/ingress";
@@ -33,16 +35,14 @@ const NewsHeader = styled.div`
 
 
 const ContactContainer = styled.div`
-    // border: 1px solid #ccc;
-    max-width: 1020px;
-    font-size: 1.2em;
-    // border-top: 5px solid #2f4858;
-    // border-bottom: 5px solid #2f4858;
-    color: #888;
     
-    // max-width: 110%;
-    margin: 20px auto 0;
-    border-radius: 0 0 7px 7px ;
+    max-width: 920px;
+    font-size: 1.2em;
+    // border-left: 3px solid #999;
+    border-radius: 5px;
+    color: #888;
+    margin: 10px auto 0;
+    
     padding: 1em;
     
     
@@ -52,12 +52,51 @@ const ContactContainer = styled.div`
     
 `;
 
+const Rake = styled.div`
+        padding: 0.5em 2em 2em;
+        color: #eee;
+        margin: 0 auto 2em;
+        background-color: #364f74;
+        border-radius: 0 0 15px 15px;
+        font-size: 1rem;
+        @media (max-width: 420px) {
+            padding-bottom: 2em;
+        }
+        // & p {
+        //     padding-top: 1em;
+        // }
+`;
+
+const Contact = styled.div`
+        color: #ddd;
+        padding: 1em 1em 2em;
+       
+`;
 const ContactInfo = styled.p`
+        
         font-size: 0.6em;
         color: #009dab;
         padding-bottom: 0.5em;
         font-weight: bold;
 `; 
+
+const Button = styled.button`
+    background-color: #009dab;
+    display: inline-block;
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 0.2em 2em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 2px #222;
+    // vertical-align: base-line;
+    color: #ddd;
+    // float: right;
+    &:hover {
+        box-shadow: 0px 1px 1px #222;
+    }
+`;
+
 export default () => (
     <div>
         <Ingress />
@@ -72,7 +111,7 @@ export default () => (
         <News className="grid grid-gutters grid--full large-grid--fit">
             
             <NewsItem>                
-                <p><span>Muistathan</span>, että sinun ei tarvitse allekirjoittaa uutta työsopimusta siirtyessäsi liikkeenluovutuksella uudelle työnantajalle.</p>  
+                <p><span>Muistathan</span>, että sinun ei tarvitse allekirjoittaa uutta työsopimusta siirtyessäsi liikkeenluovutuksella uudelle työnantajalle</p>  
                 <Icon content="1" />
             </NewsItem> 
                 <NewsItem>
@@ -80,39 +119,45 @@ export default () => (
                     <Icon content="2" />
                 </NewsItem> 
                 <NewsItem >
-                    <p><span>Jos haluat</span> allekirjoittaa sinulle tarjotun uuden työsopimuksen, varmista, että kaikki merkittävät ehdot säilyvät samantasoisina kuin aikaisemmin. Paremman työsopimuksen saa toki allekirjoittaa.</p>
+                    <p><span>Jos haluat</span> allekirjoittaa sinulle tarjotun uuden työsopimuksen, varmista, että kaikki merkittävät ehdot säilyvät samantasoisina kuin aikaisemmin. Paremman työsopimuksen saa toki allekirjoittaa</p>
                     <Icon content="3" />
                 </NewsItem> 
-           
-           
-           
         </News>
         <News className="grid grid-gutters grid--full large-grid--fit">
                 
                 <NewsItem>
-                    <p><span>Liikkeenluovutuksessa</span> työntekijä siirtyy entisin ehdoin uuden työnantajan palvelukseen. Näin ollen lomaoikeudet, eläkeoikeudet ja säästövapaat säilyvät toistaiseksi ennallaan.</p>
+                    <p><span>Liikkeenluovutuksessa</span> työntekijä siirtyy entisin ehdoin uuden työnantajan palvelukseen. Näin ollen lomaoikeudet, eläkeoikeudet ja säästövapaat säilyvät toistaiseksi ennallaan</p>
                     <Icon content="4" />
                 </NewsItem> 
                 <NewsItem>
-                    <p><span>Siirrä</span> kaikki omat tiedostosi turvaan työkoneelta (koulutusmateriaalit, kehityskeskustelut ym). Uudella työnantajalla tietojärjestelmät muuttuu ja käyttöoikeus vanhoihin tiedostoihin voin päättyä.</p>
+                    <p><span>Siirrä</span> kaikki omat tiedostosi turvaan työkoneelta (koulutusmateriaalit, kehityskeskustelut ym). Uudella työnantajalla tietojärjestelmät muuttuu ja käyttöoikeus vanhoihin tiedostoihin voin päättyä</p>
                     <Icon content="5" />
                 </NewsItem> 
         </News>
+        
     </Section>
     <Section>
         <ContactContainer>
-           
-                <h2>YHTEYSTIEDOT</h2>
-            <div className="table">
-            <ul>
-                        <li><p className="contactHead">AO 400</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p> Nina Wicht</p><p>Eija Lantta</p></li>
-                        <li><p className="contactHead">AO 401</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p>Pekka Iiskola</p><p>Kirsi Kekki</p><p>Jaana Salovaara</p></li>
-                        <li><p className="contactHead">AO 404</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p>Paula Werning</p><p>Tarja Kanerva</p></li>
-                        <li><p className="contactHead">AO 406</p><ContactInfo>etunimi.sukunimi@kotka.fi</ContactInfo><p>Kirsi Soidinsalo</p><p>Marja-Riitta Mänttäri</p></li>
-                        <li><p className="contactHead">AO 408</p><ContactInfo> etunimi.sukunimi@hamina.fi</ContactInfo><p>Marianne Närhi</p><p>Katri Hannola</p></li>
-                
-            </ul>
-            </div>
+                <h2>Tehyn RAKE-ryhmä</h2>
+            
+            <Contact>
+                {/* <h4>KYMENLAAKSON TEHYN RAKERYHMÄN YHTEYSTIEDOT</h4> */}
+                <div className="table">
+                <ul>
+                            <li><p className="contactHead">AO 400</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p> Nina Wicht</p><p>Eija Lantta</p></li>
+                            <li><p className="contactHead">AO 401</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p>Pekka Iiskola</p><p>Kirsi Kekki</p><p>Jaana Salovaara</p></li>
+                            <li><p className="contactHead">AO 404</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p>Paula Werning</p><p>Tarja Kanerva</p></li>
+                            <li><p className="contactHead">AO 406</p><ContactInfo>etunimi.sukunimi@kotka.fi</ContactInfo><p>Kirsi Soidinsalo</p><p>Marja-Riitta Mänttäri</p></li>
+                            <li><p className="contactHead">AO 408</p><ContactInfo> etunimi.sukunimi@hamina.fi</ContactInfo><p>Marianne Närhi</p><p>Katri Hannola</p></li>
+                    
+                </ul>
+                </div>
+            </Contact>
+                <Rake>
+                    <h4>Rake-ryhmä?</h4>
+                    <p>Alueellinen rakennemuutos- eli RAKE-ryhmä, jonka keskeisenä tehtävänä on selvittää muutoksen vaikutukset tehyläisiin ja vastata niihin. Ryhmän tehtävänä on sopia ja valita edustajia työryhmiin, joissa henkilöstöä koskevia asioita käsitellään.</p>
+                    <Link to="/rake/"><Button>LUE LISÄÄ</Button></Link>
+                </Rake>
         </ContactContainer>
     </Section>
 </div>

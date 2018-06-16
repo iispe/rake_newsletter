@@ -12,6 +12,7 @@ h1, h2 {
 }
 h2 {
   color: #009dab;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -20,7 +21,7 @@ h3 {
 
 ul {
   list-style-type: none;
-  border-top: 3px solid #666;
+  /* border-top: 3px solid #666; */
   display: inline-block;
 }
 li {
@@ -34,14 +35,14 @@ li p:hover {
 }
 .table {
   display: table;
+  color: #aaa;
   margin: 0 auto;
-  padding-top: 1.5em;
+  padding-top: 1em;
   font-size: 0.8em;
 }
 .contactHead {
   font-weight: bold;
-  
-   
+    
 }
 .info {
     background-color: #fbfbfb;
