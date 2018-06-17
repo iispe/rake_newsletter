@@ -13,11 +13,11 @@ const Ing = styled.div`
 `;
 
 const Right = styled.div`
-    border-right: 3px solid #009dab;
+    border-right: 5px solid #009dab;
     & p {
         font-weight: bold;
         font-size: 2em;
-        t
+        
         padding-top: 0.5em;
         // border-top: 1px solid #009dab;
         // border-bottom: 1px solid #009dab;
@@ -30,6 +30,12 @@ const Right = styled.div`
     }
     @media (max-width: 720px) {
         border: none;
+        
+    }
+
+    @media (max-width: 420px) {
+        padding-bottom: 3em;
+        border-bottom: 20px dotted #009dab;
     }
 `;
 
@@ -46,7 +52,7 @@ const Left = styled.div`
     }
 
     @media (max-width: 420px) {
-        padding-top: 3em;
+        padding-top: 2em;
     }
 `;
 

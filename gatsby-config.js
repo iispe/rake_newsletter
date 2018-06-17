@@ -1,4 +1,7 @@
 module.exports = {
+    siteMetadata: {
+        title: `Tehy Kymenlaakso Rake`,
+    },
     plugins: [`gatsby-plugin-styled-components`, 
             {
                 resolve: `gatsby-plugin-typography`,

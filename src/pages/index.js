@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 import Icon from "../components/icon";
 import Ingress from "../components/ingress";
+import Links from "../components/links";
 import NewsItem from "../components/newsItem";
 
 
@@ -12,6 +13,7 @@ const Section = styled.section`
     padding: 0 2em;
     &:nth-child(3) {
         border-top: 3px solid #D9335B;
+        border-bottom: 3px solid #009dab;
         padding: 10px 0 10px 0;
         margin: 3em 0 0 0;
         min-height: 320px;
@@ -38,7 +40,7 @@ const ContactContainer = styled.div`
     
     max-width: 920px;
     font-size: 1.2em;
-    // border-left: 3px solid #999;
+    
     border-radius: 5px;
     color: #888;
     margin: 10px auto 0;
@@ -57,19 +59,33 @@ const Rake = styled.div`
         color: #eee;
         margin: 0 auto 2em;
         background-color: #364f74;
+        
         border-radius: 0 0 15px 15px;
+        box-shadow: 0 4px 6px #222;
         font-size: 1rem;
         @media (max-width: 420px) {
             padding-bottom: 2em;
         }
-        // & p {
-        //     padding-top: 1em;
-        // }
+        
 `;
 
 const Contact = styled.div`
         color: #ddd;
         padding: 1em 1em 2em;
+        & ul {
+            list-style-type: none;
+            /* border-top: 3px solid #666; */
+            display: inline-block;
+        }
+        & li {
+            float: left;
+            line-height: 70%;
+            padding: 1em 1em;
+        }
+        & li p:hover {
+            color: #ccc;
+    }
+}
        
 `;
 const ContactInfo = styled.p`
@@ -88,12 +104,12 @@ const Button = styled.button`
     padding: 0.2em 2em;
     border-radius: 5px;
     border: none;
-    box-shadow: 0px 2px 2px #222;
+    box-shadow: 0px 1px 1px #222;
     // vertical-align: base-line;
     color: #ddd;
     // float: right;
     &:hover {
-        box-shadow: 0px 1px 1px #222;
+        box-shadow: none;
     }
 `;
 
@@ -111,26 +127,26 @@ export default () => (
         <News className="grid grid-gutters grid--full large-grid--fit">
             
             <NewsItem>                
-                <p><span>Muistathan</span>, että sinun ei tarvitse allekirjoittaa uutta työsopimusta siirtyessäsi liikkeenluovutuksella uudelle työnantajalle</p>  
+                <p><span>Muistathan</span>, että sinun ei tarvitse allekirjoittaa uutta työsopimusta siirtyessäsi liikkeenluovutuksella uudelle työnantajalle.</p>  
                 <Icon content="1" />
             </NewsItem> 
                 <NewsItem>
-                    <p><span>Työnantajan</span> pitää jokatapauksessa noudattaa vanhoja työsuhteen ehtoja, jos uutta sopimusta ei allekirjoiteta</p>
+                    <p><span>Työnantajan</span> pitää jokatapauksessa noudattaa vanhoja työsuhteen ehtoja, jos uutta sopimusta ei allekirjoiteta.</p>
                     <Icon content="2" />
                 </NewsItem> 
                 <NewsItem >
-                    <p><span>Jos haluat</span> allekirjoittaa sinulle tarjotun uuden työsopimuksen, varmista, että kaikki merkittävät ehdot säilyvät samantasoisina kuin aikaisemmin. Paremman työsopimuksen saa toki allekirjoittaa</p>
+                    <p><span>Jos haluat</span> allekirjoittaa sinulle tarjotun uuden työsopimuksen, varmista, että kaikki merkittävät ehdot säilyvät samantasoisina kuin aikaisemmin. Paremman työsopimuksen saa toki allekirjoittaa.</p>
                     <Icon content="3" />
                 </NewsItem> 
         </News>
         <News className="grid grid-gutters grid--full large-grid--fit">
                 
                 <NewsItem>
-                    <p><span>Liikkeenluovutuksessa</span> työntekijä siirtyy entisin ehdoin uuden työnantajan palvelukseen. Näin ollen lomaoikeudet, eläkeoikeudet ja säästövapaat säilyvät toistaiseksi ennallaan</p>
+                    <p><span>Liikkeenluovutuksessa</span> työntekijä siirtyy entisin ehdoin uuden työnantajan palvelukseen. Näin ollen lomaoikeudet, eläkeoikeudet ja säästövapaat säilyvät toistaiseksi ennallaan.</p>
                     <Icon content="4" />
                 </NewsItem> 
                 <NewsItem>
-                    <p><span>Siirrä</span> kaikki omat tiedostosi turvaan työkoneelta (koulutusmateriaalit, kehityskeskustelut ym). Uudella työnantajalla tietojärjestelmät muuttuu ja käyttöoikeus vanhoihin tiedostoihin voin päättyä</p>
+                    <p><span>Siirrä</span> kaikki omat tiedostosi turvaan työkoneelta (koulutusmateriaalit, kehityskeskustelut ym). Uudella työnantajalla tietojärjestelmät muuttuu ja käyttöoikeus vanhoihin tiedostoihin voi päättyä.</p>
                     <Icon content="5" />
                 </NewsItem> 
         </News>
@@ -159,6 +175,9 @@ export default () => (
                     <Link to="/rake/"><Button>LUE LISÄÄ</Button></Link>
                 </Rake>
         </ContactContainer>
+    </Section>
+    <Section>
+        <Links />
     </Section>
 </div>
 );

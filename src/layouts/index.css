@@ -15,24 +15,6 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
-    margin: 0.7em 0 1em 0;
-}
-
-ul {
-  list-style-type: none;
-  /* border-top: 3px solid #666; */
-  display: inline-block;
-}
-li {
-  float: left;
-  line-height: 70%;
-  padding: 1em 1.5em;
-}
-
-li p:hover {
-  color: #ccc;
-}
 .table {
   display: table;
   color: #aaa;

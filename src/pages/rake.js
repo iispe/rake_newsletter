@@ -45,8 +45,10 @@ const MainText = styled.div`
     padding: 1em 2em;
     max-width: 920px;
     border: 1px solid #bbb;
-    
     background-color: #fff;
+    & h3 {
+    margin: 0.7em 0 1em 0;
+}
 `;
 
 const Highlight = styled.span`
@@ -71,8 +73,8 @@ export default () => (
         <SubPageContainer>
                 <TekstiOsa>
                     <SubPageHeader>
-                        <p>Rakennemuutos maakunnassa on suuri ja sen vaikutukset ovat merkittäviä Tehyläiselle henkilöstölle.</p>
-                    <p>Kymenlaakson Tehy Rake -ryhmä ja ammattiosastojen puheenjohtajisto, sekä luottamusmiehet ja työsuojeluvaltuutetut kokoontuvat säännöllisesti yhdessä tai puheenjohtajat erikseen. Samoin muiden ammattijärjestöjen tapaamiset ovat säännöllisiä, neuvottelijat heidän kanssa ovat Tehyltä <Highlight>Eija Lantta, Asta Nurminen ja Marja-Riitta Mänttäri.</Highlight></p>
+                        <p>Rakennemuutos maakunnassa on suuri ja sen vaikutukset ovat merkittäviä Tehyläiselle henkilöstölle.
+                    Kymenlaakson Tehy Rake -ryhmä ja ammattiosastojen puheenjohtajisto, sekä luottamusmiehet ja työsuojeluvaltuutetut kokoontuvat säännöllisesti yhdessä tai puheenjohtajat erikseen. Samoin muiden ammattijärjestöjen tapaamiset ovat säännöllisiä, neuvottelijat heidän kanssa ovat Tehyltä <Highlight>Eija Lantta, Asta Nurminen ja Marja-Riitta Mänttäri.</Highlight></p>
                     </SubPageHeader>
             
                     <MainText>
