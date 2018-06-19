@@ -1,9 +1,6 @@
 body {
     margin: 0;
-    /* background-image: url('../assets/bk.svg'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: #efefef; */
+    background-color: #fff;
 }
 
 h1, h2 {

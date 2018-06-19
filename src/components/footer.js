@@ -28,7 +28,8 @@ const FooterWrapper = styled.div`
 const Footer = ({ }) => (
     <Foot >
         <FooterWrapper>
-        <div>Tehyn Kymenlaakson ammattiosastot 2018</div>
+            <div>Seuraava tiedote ilmestyy elo-/syyskuussa - Tehyn Kymenlaakson ammattiosastot 2018 </div>
+        
         </FooterWrapper>  
     </Foot>
 );

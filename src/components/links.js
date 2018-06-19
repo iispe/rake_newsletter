@@ -4,8 +4,10 @@ import Link from "gatsby-link";
 
 const Linkcontainer = styled.div`
     max-width: 920px;
-    
-    margin: 0 auto;
+    border-top: 25px solid #009dab;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px #aaa;
+    margin: 2em auto;
     padding: 2em 1em;
 
     & ul {
@@ -17,20 +19,32 @@ const Linkcontainer = styled.div`
     & li a {
     display: block;
     color: #000;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
     padding: 8px 16px;
+    text-align: center;
     text-decoration: none;
+    transition: all ease-in 150ms;
+    
 }
     & li a:hover {
-        background-color: #364f74;
+        background-color: #009dab;
         color: white;
+    }
+
+    & h2 {
+        text-align: center;
+        
+    }
+    li:nth-child(1) {
+        border-top: 3px solid #ccc;
+        margin-top: 1em;
     }
 `;
 
 
 const Links = ({}) => (
     <Linkcontainer>
-        <h3>Lisää tietoa muutoksesta </h3>
+        <h2>Lisää tietoa muutoksesta </h2>
         <ul>
             <li><a href="http://alueuudistus.fi">Alueuudistus.fi</a></li>
             <li><a href="http://www.uusikymenlaakso.fi">Uusikymenlaakso.fi</a></li>

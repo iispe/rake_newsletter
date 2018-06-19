@@ -35,23 +35,16 @@ const NewsHeader = styled.div`
 
 `;
 
-
 const ContactContainer = styled.div`
-    
     max-width: 920px;
     font-size: 1.2em;
-    
     border-radius: 5px;
     color: #888;
     margin: 10px auto 0;
-    
     padding: 1em;
-    
-    
         h2 {
             text-align: center;
         }
-    
 `;
 
 const Rake = styled.div`
@@ -59,14 +52,12 @@ const Rake = styled.div`
         color: #eee;
         margin: 0 auto 2em;
         background-color: #364f74;
-        
         border-radius: 0 0 15px 15px;
         box-shadow: 0 4px 6px #222;
         font-size: 1rem;
         @media (max-width: 420px) {
             padding-bottom: 2em;
         }
-        
 `;
 
 const Contact = styled.div`
@@ -89,7 +80,6 @@ const Contact = styled.div`
        
 `;
 const ContactInfo = styled.p`
-        
         font-size: 0.6em;
         color: #009dab;
         padding-bottom: 0.5em;
