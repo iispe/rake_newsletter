@@ -62,16 +62,23 @@ const Rake = styled.div`
 
 const Contact = styled.div`
         color: #ddd;
+        font-size: 0.8em;
+        //  border: 1px solid white;
         padding: 1em 1em 2em;
         & ul {
             list-style-type: none;
-            /* border-top: 3px solid #666; */
-            display: inline-block;
+            width: 100%;
+            display: table;
+            margin-left: 0;
         }
         & li {
+            display: table-cell;
+            text-align: center;
             float: left;
+            
             line-height: 70%;
-            padding: 1em 1em;
+            margin: 0 auto;
+            padding: 1em 0.65em;
         }
         & li p:hover {
             color: #ccc;
