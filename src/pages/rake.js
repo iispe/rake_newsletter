@@ -5,12 +5,14 @@ import Link from "gatsby-link";
 import Container from "../components/container";
 
 const SubPageContainer = styled.div`
-    margin: 0 auto;
+   margin: 0 auto;
    background-color: #ddd;
+   padding: 0 1em; 
+   
 `;
 
 const Navigation = styled.div`
-    padding: 0.3em 3em;
+    padding: 0.3em 1em;
     font-size: 0.8em;
     text-transform: uppercase;
     background-color: #eee;
@@ -20,7 +22,6 @@ const Navigation = styled.div`
 const SubPageHeader = styled.div`
     background-color: #fff;
     color: #000;
-    // font-size: 1.4em;
     border: 1px solid #bbb;
     border-top: 25px solid #009dab;
     border-radius: 5px; 
@@ -34,10 +35,14 @@ const SubPageHeader = styled.div`
     
 `;
 
-const TekstiOsa = styled.div`
-    font-size: 1.3em;
+const TextP = styled.div`
+    font-size: 1.4rem;
     padding-top: 15px;
     padding-bottom: 15px;
+
+    @media screen and (max-width: 920px) {
+       font-size: 1.2rem;
+   }
 `;
 
 const MainText = styled.div`
@@ -58,7 +63,7 @@ const Highlight = styled.span`
 
 const First = styled.span`
     color: #D9335B;
-    font-size: 0.9em
+    font-size: 1.2rem
     font-weight: bold;
     text-transform: uppercase;
     &:before {
@@ -71,7 +76,7 @@ export default () => (
             <Link to="/"> {"<"} Takaisin etusivulle </Link>
         </Navigation>
         <SubPageContainer>
-                <TekstiOsa>
+                <TextP>
                     <SubPageHeader>
                         <p>Rakennemuutos maakunnassa on suuri ja sen vaikutukset ovat merkittäviä Tehyläiselle henkilöstölle.
                     Kymenlaakson Tehy Rake -ryhmä ja ammattiosastojen puheenjohtajisto, sekä luottamusmiehet ja työsuojeluvaltuutetut kokoontuvat säännöllisesti yhdessä tai puheenjohtajat erikseen. Samoin muiden ammattijärjestöjen tapaamiset ovat säännöllisiä, neuvottelijat heidän kanssa ovat Tehyltä <Highlight>Eija Lantta, Asta Nurminen ja Marja-Riitta Mänttäri.</Highlight></p>
@@ -91,7 +96,7 @@ export default () => (
                     <p><First>Tiedottaa</First> jäsenistölle</p>
                     <p><First>Huolehtia</First> lm ja tsv organisoitumisen käynnistymisestä </p>
                     </MainText>
-                </TekstiOsa>
+                </TextP>
         </SubPageContainer>
         <Navigation>
             <Link to="/"> {"<"} Takaisin etusivulle </Link>
