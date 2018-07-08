@@ -79,7 +79,7 @@ export default () => (
                 <TextP>
                     <SubPageHeader>
                         <p>Rakennemuutos maakunnassa on suuri ja sen vaikutukset ovat merkittäviä Tehyläiselle henkilöstölle.
-                    Kymenlaakson Tehy Rake -ryhmä ja ammattiosastojen puheenjohtajisto, sekä luottamusmiehet ja työsuojeluvaltuutetut kokoontuvat säännöllisesti yhdessä tai puheenjohtajat erikseen. Samoin muiden ammattijärjestöjen tapaamiset ovat säännöllisiä, neuvottelijat heidän kanssa ovat Tehyltä <Highlight>Eija Lantta, Asta Nurminen ja Marja-Riitta Mänttäri.</Highlight></p>
+                    Kymenlaakson Tehy Rake -ryhmä ja ammattiosastojen puheenjohtajisto, sekä luottamusmiehet ja työsuojeluvaltuutetut kokoontuvat säännöllisesti yhdessä tai puheenjohtajat erikseen. Samoin muiden ammattijärjestöjen tapaamiset ovat säännöllisiä, neuvottelijat heidän kanssa ovat Tehyltä <Highlight>henkilö1, henkilö2 ja henkilö3.</Highlight></p>
                     </SubPageHeader>
             
                     <MainText>

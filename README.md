@@ -1,10 +1,14 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# rake newsletter
+Private project for delivering news to members of the community.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+Removed all names from the code repository
 
-## Running in development
-`gatsby develop`
+Done with:
+-Gatsby.js // react
+-styled components
+
+Layout with flexbox
+
+## in development
+Remove the remaining css and use styled-components to its fullest
+

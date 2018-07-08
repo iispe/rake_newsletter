@@ -85,11 +85,11 @@ const Contact = () => (
         {/* <h4>KYMENLAAKSON TEHYN RAKERYHMÄN YHTEYSTIEDOT</h4> */}
         <div className="table">
             <ul>
-                <li><p className="contactHead">AO 400</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p> Nina Wicht</p><p>Eija Lantta</p></li>
-                <li><p className="contactHead">AO 401</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p>Pekka Iiskola</p><p>Kirsi Kekki</p><p>Jaana Salovaara</p></li>
-                <li><p className="contactHead">AO 404</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p>Paula Werning</p><p>Tarja Kanerva</p></li>
-                <li><p className="contactHead">AO 406</p><ContactInfo>etunimi.sukunimi@kotka.fi</ContactInfo><p>Kirsi Soidinsalo</p><p>Marja-Riitta Mänttäri</p></li>
-                <li><p className="contactHead">AO 408</p><ContactInfo> etunimi.sukunimi@hamina.fi</ContactInfo><p>Marianne Närhi</p><p>Katri Hannola</p></li>
+                <li><p className="contactHead">AO 400</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p> Nimi</p><p>Nimi</p></li>
+                    <li><p className="contactHead">AO 401</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p>Nimi</p><p>Nimi</p><p>Nimi</p></li>
+                    <li><p className="contactHead">AO 404</p><ContactInfo>etunimi.sukunimi@carea.fi</ContactInfo><p>Nimi</p><p>Nimi</p></li>
+                    <li><p className="contactHead">AO 406</p><ContactInfo>etunimi.sukunimi@kotka.fi</ContactInfo><p>Nimi</p><p>Nimi</p></li>
+                    <li><p className="contactHead">AO 408</p><ContactInfo> etunimi.sukunimi@hamina.fi</ContactInfo><p>Nimi</p><p>Nimi</p></li>
 
             </ul>
         </div>
