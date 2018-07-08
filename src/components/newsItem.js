@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 
 const Item = styled.div`
+    flex: 1;
     position: relative;
     color: #2F4858;
     margin-right: 10px;

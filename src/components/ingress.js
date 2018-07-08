@@ -9,18 +9,23 @@ const Ing = styled.div`
     padding: 2em 2em 2em;
     margin-bottom: 6em;
     border-bottom: 3px solid #009dab;
+    display: flex;
+    flex-wrap: wrap;
     
+    @media screen and (max-width: 920px) {
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
 `;
 
 const Right = styled.div`
     border-right: 5px solid #009dab;
+    flex: 2;
     & p {
         font-weight: bold;
         font-size: 2em;
-        
         padding-top: 0.5em;
-        // border-top: 1px solid #009dab;
-        // border-bottom: 1px solid #009dab;
+        
     }
     & div {
         font-size: 0.8em;
@@ -28,19 +33,20 @@ const Right = styled.div`
         color: white;
         
     }
-    @media (max-width: 720px) {
-        border: none;
+    @media (max-width: 920px) {
+        flex: 1;
+       border: none;
+        padding-bottom: 3em;
+       
         
     }
 
-    @media (max-width: 420px) {
-        padding-bottom: 3em;
-        border-bottom: 20px dotted #009dab;
-    }
+    
 `;
 
 const Left = styled.div`
-    padding: 6.5em 0 0 3em;;
+    flex: 1;
+    padding: 3.5em 0 0 3em;;
     color: white;
     font-size: 1.2em;
     
@@ -51,19 +57,22 @@ const Left = styled.div`
         color: #09c3a0;
     }
 
-    @media (max-width: 420px) {
-        padding-top: 2em;
+    @media (max-width: 920px) {
+        padding: 1em;
+        background: #009dab;
+        border-radius: 30px 30px 30px 0;
+        box-shadow: 0 5px 10px #333;
     }
 `;
 
 
 const Ingress = ({}) => (
-    <Ing className="grid grid-gutters ">
-        <Right className="grid-cell ">
+    <Ing>
+        <Right>
             <p>Muutos. Tulevaisuus. Tehyläisyys.</p>
             <div>Uusi maakunta Tehyläisin silmin</div>
     </Right>
-        <Left className="grid-cell ">
+        <Left>
            Tietoa tulevasta muutoksesta ja uudesta maakunnasta Tehyn rake-ryhmän toimittamana. 
     </Left>
     
